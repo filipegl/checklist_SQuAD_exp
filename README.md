@@ -1,12 +1,12 @@
 # Using checklist to generate a dataset to finetune the distilbert-base-cased-distilled-quad
 
-This experiment uses the [Checklist tool](https://github.com/marcotcr/checklist) which aims to test NLP models as behavioral test of softwares. \
+This experiment uses the [Checklist tool](https://github.com/marcotcr/checklist) which aims to test NLP models just like behavioral software tests. \
 ​
 The most part of the code was retrieved from https://github.com/marcotcr/checklist/tree/master/notebooks and https://github.com/sophiamyang/NLP_testing
 
 ## The experiment goal
 
-I used the checklist to test the [`distilbert-base-cased-distilled-squad`](https://huggingface.co/distilbert-base-cased-distilled-squad) model with generated tests. From these tests, I created a new SQuAD dataset, and with it, I finetuned the [`distilbert-base-uncased`](https://huggingface.co/distilbert-base-uncased)
+Checklist was used to test the [`distilbert-base-cased-distilled-squad`](https://huggingface.co/distilbert-base-cased-distilled-squad) model. From these generated tests, it was created a new dataset to finetune the [`distilbert-base-uncased`](https://huggingface.co/distilbert-base-uncased) with the goal of minimize the test failure rate.
 
 ## Explaining the notebooks
 
