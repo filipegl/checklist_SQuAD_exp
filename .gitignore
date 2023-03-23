@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+biased_squad
+checkpoint-*
+new_data
+tmp
+squad.json*
+*.pkl
+*.csv
