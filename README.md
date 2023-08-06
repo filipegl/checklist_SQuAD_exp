@@ -23,36 +23,36 @@ The table below shows the comparison between the two models and their failure ra
 | Test names by capability | SQuAD (Failure Rate %) | biased_SQuAD (Failure Rate %) |
 | --- | --- | --- |
 | **Vocabulary** |  |  |
-| A is COMP than B. Who is more COMP? | $4.0\%%%$ | $\colorbox{green}{0.0\%}$ |
-| A is COMP than B. Who is less COMP? | $98.0\%$ | $\colorbox{green}{12.0\%}$ |
-| Intensifiers (very, super, extremely) and reducers (somewhat, kinda, etc)? | $100.0\%$ | $\colorbox{green}{1.0\%}$ |
+| A is COMP than B. Who is more COMP? | $4.0\%%%$ | $0.0\%$ |
+| A is COMP than B. Who is less COMP? | $98.0\%$ | $12.0\%$ |
+| Intensifiers (very, super, extremely) and reducers (somewhat, kinda, etc)? | $100.0\%$ | $1.0\%$ |
 | **Taxonomy** |  |  |
-| size, shape, age, color | $98.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Profession vs nationality | $25.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Animal vs Vehicle | $62.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Animal vs Vehicle v2 | $64.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Synonyms | $13.0\%$ | $\colorbox{green}{0.0\%}$ |
-| A is COMP than B. Who is antonym(COMP)? B | $100.0\%$ | $\colorbox{green}{8.0\%}$ |
-| A is more X than B. Who is more antonym(X)? B. Who is less X? B. Who is more X? A. Who is less antonym(X)? A. | $100.0\%$ | $\colorbox{green}{99.0\%}$ |
+| size, shape, age, color | $98.0\%$ | $0.0\%$ |
+| Profession vs nationality | $25.0\%$ | $0.0\%$ |
+| Animal vs Vehicle | $62.0\%$ | $0.0\%$ |
+| Animal vs Vehicle v2 | $64.0\%$ | $0.0\%$ |
+| Synonyms | $13.0\%$ | $0.0\%$ |
+| A is COMP than B. Who is antonym(COMP)? B | $100.0\%$ | $8.0\%$ |
+| A is more X than B. Who is more antonym(X)? B. Who is less X? B. Who is more X? A. Who is less antonym(X)? A. | $100.0\%$ | $99.0\%$ |
 | **Robustness** |  |  |
-| Question typo | $11.0\%$ | $\colorbox{#d00000}{22.0%}$ |
-| Question contractions | $9.0\%$ | $\colorbox{green}{6.0\%}$ |
-| Add random sentence to context | $10.0\%$ | $\colorbox{#d00000}{28.0\%}$ |
+| Question typo | $11.0\%$ | $22.0%$ |  
+| Question contractions | $9.0\%$ | $6.0\%$ |
+| Add random sentence to context | $10.0\%$ | $28.0\%$ |
 | **NER** |  |  |
-| Change name everywhere | $7.0\%$ | $\colorbox{#d00000}{9.0\%}$ |
-| Change location everywhere | $5.0\%$ | $\colorbox{#d00000}{10.0\%}$ |
+| Change name everywhere | $7.0\%$ | $9.0\%$ |
+| Change location everywhere | $5.0\%$ | $10.0\%$ |
 | **Fairness** |  |  |
-| M/F failure rates should be similar for different professions | $85.0\%$ | $\colorbox{green}{0.0\%}$ |
+| M/F failure rates should be similar for different professions | $85.0\%$ | $0.0\%$ |
 | **Temporal** |  |  |
-| There was a change in profession | $1.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Understanding before / after -> first / last. | $100.0\%$ | $\colorbox{green}{0.0\%}$ |
+| There was a change in profession | $1.0\%$ | $0.0\%$ |
+| Understanding before / after -> first / last. | $100.0\%$ | $0.0\%$ |
 | Negation |  |  |
-| Negation in context, may or may not be in question | $93.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Negation in question only. | $100.0\%$ | $\colorbox{green}{0.0\%}$ |
+| Negation in context, may or may not be in question | $93.0\%$ | $0.0\%$ |
+| Negation in question only. | $100.0\%$ | $0.0\%$ |
 | **Coref** |  |  |
-| Basic coref, he / she | $100.0\%$ | $\colorbox{green}{1.0\%}$ |
-| Basic coref, his / her | $98.0\%$ | $\colorbox{green}{0.0\%}$ |
-| Former / Latter | $100.0\%$ | $\colorbox{green}{0.0\%}$ |
+| Basic coref, he / she | $100.0\%$ | $1.0\%$ |
+| Basic coref, his / her | $98.0\%$ | $0.0\%$ |
+| Former / Latter | $100.0\%$ | $0.0\%$ |
 | **SRL** |  |  |
-| Agent / object distinction | $69.0\%$ | $\colorbox{#d00000}{97.0\%}$ |
-| Agent / object distinction with 3 agents | $98.0\%$ | $\colorbox{green}{96.0\%}$ |
+| Agent / object distinction | $69.0\%$ | $97.0\%$ |
+| Agent / object distinction with 3 agents | $98.0\%$ | $96.0\%$ |
